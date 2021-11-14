@@ -38,8 +38,11 @@ az configure --defaults group=azure-iac
 az deployment group create --template-file main.bicep # this is wrong
 az deployment sub create --template-file main.bicep # this is right
 az deployment sub validate --location centralindia --template-file create-resource-group.bicep
-az deployment sub validate --location centralindia --template-file create-resource-group.bicep
+az deployment sub validate --location centralindia --template-file create-resource-group.bicep --output table
 az deployment sub create --location centralindia --template-file create-resource-group.bicep
 
+az deployment sub validate --location centralindia --template-file create-resource-group.bicep --output table | grep Succeeded | head -1 | cut -d'"' -f4
+
+echo 'Succeeded  d0875a4f-bd00-4edc-a83c-e83a71d6c334'
 
 */
