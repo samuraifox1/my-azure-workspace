@@ -29,7 +29,7 @@ Connecting to server ...
 >> Register Agent:
 
 Enter agent pool (press enter for default) > Org-Level-Agent-Pool
-Enter agent name (press enter for RSWARNKAR-PC) > my-home-windows-pc-agent
+Enter agent name (press enter for MY-PC) > my-home-windows-pc-agent
 Scanning for tool capabilities.
 Connecting to the server.
 Successfully added the agent
