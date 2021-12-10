@@ -1,0 +1,1 @@
+replica_locations = ["australiaeast","centralus"]
