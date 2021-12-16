@@ -1,0 +1,32 @@
+
+{
+  "appId": "___",
+  "displayName": "azure-cli-2021-07-10-05-04-55",
+  "name": "___",
+  "password": "___",
+  "tenant": "__"
+}
+
+
+appId = ARM_CLIENT_ID
+password = ARM_CLIENT_SECRET
+tenant = ARM_TENANT_ID
+
+az account list -o table
+SubscriptionId = ARM_SUBSCRIPTION_ID
+
+# Environment Variables for Terraform Cloud 
+ARM_CLIENT_ID=appId
+ARM_CLIENT_SECRET=password
+ARM_TENANT_ID=tenant
+ARM_SUBSCRIPTION_ID=subscription id
+
+
+
+# Verify
+az logout
+az account list-locations -o table
+az login --service-principal -u CLIENT_ID -p CLIENT_SECRET --tenant TENANT_ID
+az login --service-principal -u sdfsdfsfsfsf -p Dfdfsdfsdfsd --tenant sdfsdfsdfsd
+az account list-locations -o table
+az logout
